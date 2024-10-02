@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://{SundayYogurt}.github.io/{2567-portfolio}/",
+  "homepage": "https://SundayYogurt.github.io/2567-portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
