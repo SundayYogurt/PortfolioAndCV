@@ -1,5 +1,5 @@
 import React from "react";
-
+import CV_Krit from "../assets/download/CV_Krit.pdf";
 const Header = () => {
   const menuFunction = () => {
     const menuBtn = document.getElementById("myNavMenu");
@@ -21,7 +21,7 @@ const Header = () => {
         <ul className="nav_menu_list"></ul>
 
         <li className="nav_list">
-          <a href="#Home" className="nav-link active-link">
+          <a href="#home" className="nav-link active-link">
             Home
           </a>
         </li>
@@ -42,9 +42,11 @@ const Header = () => {
         </li>
       </div>
       <div className="nav-button">
-        <button className="btn">
-          Download CV<i className="uil uil-file-download-alt"></i>
-        </button>
+        <a href={CV_Krit} target="blank">
+          <button className="btn">
+            Download CV<i className="uil uil-file-download-alt"></i>
+          </button>
+        </a>
       </div>
       <div className="nav-menu-btn">
         <i className="uil uil-bars" onClick={menuFunction}></i>
