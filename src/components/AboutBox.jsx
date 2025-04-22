@@ -1,5 +1,4 @@
 import React from "react";
-import CV_Krit from "../assets/download/CV_Krit.pdf";
 
 const AboutBox = () => {
   return (
@@ -18,16 +17,14 @@ const AboutBox = () => {
               automation, cloud infrastructure, and continuous
               integration/continuous deployment (CI/CD), Krit excels at bridging
               the gap between development and operations. Whether it's
-              scripting, containerization, or optimizing workflows, Krit’s
+              scripting, containerization, or optimizing workflows, Krit's
               diverse skill set enables him to tackle any challenge in the tech
               landscape with confidence and creativity.
             </p>
             <div className="about-btn">
               <div className="nav-button">
-                <a href={CV_Krit} target="blank">
-                  <button className="btn">
-                    Download CV<i className="uil uil-file-download-alt"></i>
-                  </button>
+                <a href={import.meta.env.BASE_URL + "CV_Krit1.pdf"} target="blank" download className="btn">
+                  Download CV
                 </a>
               </div>
               <div className="nav-menu-btn"></div>
@@ -49,7 +46,6 @@ const AboutBox = () => {
               <span>DaisyUI</span>
               <span>Figma</span>
               <span>React</span>
-              <span>Angular</span>
               <span>Vue</span>
             </div>
           </div>
@@ -72,7 +68,6 @@ const AboutBox = () => {
             </div>
             <div className="skills-list">
               <span>MySQL</span>
-              <span>PosgreSQL</span>
               <span>MongoDB</span>
             </div>
           </div>

@@ -80,7 +80,7 @@ function App() {
     window.addEventListener("scroll", scrollActive);
     // Type Effect
     const typingEffect = new Typed(".typedText", {
-      strings: ["Superdev", "DevOps", "Front-END"],
+      strings: ["Full-Stack Dev", "Backend Dev", "Front-End Dev"],
       loop: true,
       typeSpeed: 100,
       backSpeed: 80,

@@ -1,5 +1,6 @@
 import React from "react";
-import one from "../assets/images/one.jpg";
+import profile from "../assets/images/profile.jpg";
+
 const FeaturedBox = () => {
   return (
     <section className="featured-box" id="home">
@@ -14,15 +15,17 @@ const FeaturedBox = () => {
         <div className="featured-text-info">
           <p>
             Hello! I am a passionate Full Stack Web Developer with proficiency
-            in multiple programming languages, including Java, Python, C++,
-            HTML, CSS, JavaScript, React, and Angular. I also have experience in
+            in multiple programming languages, including C++, PHP,
+            HTML, CSS, JavaScript, React. I also have experience in
             designing databases and creating diagrams to assist in planning
           </p>
         </div>
         <div className="featured-text-btn">
-          <button className="btn">
-            Download CV <i className="uil uil-file-download-alt"></i>
-          </button>
+          <a href={import.meta.env.BASE_URL + "CV_Krit1.pdf"} target="blank" download>
+            <button className="btn">
+              Download CV<i className="uil uil-file-download-alt"></i>
+            </button>
+          </a>
         </div>
         <div className="social_icons">
           <div className="icon">
@@ -44,7 +47,7 @@ const FeaturedBox = () => {
       </div>
       <div className="featured-image">
         <div className="image">
-          <img src={one} alt="one" />
+          <img src={profile} alt="profile" />
         </div>
       </div>
       <div className="scroll-icon-box">
