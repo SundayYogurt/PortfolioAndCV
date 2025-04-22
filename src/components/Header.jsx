@@ -1,9 +1,10 @@
-import React from "react";
+
+import Krit from "../assets/download/Krit.pdf"
 
 const Header = () => {
   const menuFunction = () => {
     const menuBtn = document.getElementById("myNavMenu");
-    if (menuBtn.className == "nav-menu") {
+    if (menuBtn.className === "nav-menu") {
       menuBtn.className += " responsive";
     } else {
       menuBtn.className = "nav-menu";
@@ -11,7 +12,8 @@ const Header = () => {
   };
 
   const handleDownload = () => {
-    window.open('/CV_Krit1.pdf', '_blank');
+    // เปิดไฟล์ PDF ในแท็บใหม่
+    window.open(Krit, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -41,8 +43,12 @@ const Header = () => {
         </ul>
 
         <div className="nav-button">
-          <button onClick={handleDownload} className="btn" style={{ textDecoration: 'none' }}>
-            Download CV<i className="uil uil-file-download-alt"></i>
+          <button
+            onClick={handleDownload}
+            className="btn"
+            type="button"
+          >
+            View CV <i className="uil uil-file-download-alt"></i>
           </button>
         </div>
       </div>

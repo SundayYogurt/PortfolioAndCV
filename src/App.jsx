@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import FeaturedBox from "./components/FeaturedBox";
@@ -21,18 +21,17 @@ function App() {
         const sectionHeight = current.offsetHeight,
           sectionTop = current.offsetTop - 50,
           sectionId = current.getAttribute("id");
-        console.log(sectionHeight, sectionTop, sectionId);
+
+        const link = document.querySelector(`.nav-menu a[href*="#${sectionId}"]`);
+        if (!link) return; // ถ้าไม่เจอ element ให้ข้าม
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          document
-            .querySelector(".nav-menu a[href*=" + sectionId + "]")
-            .classList.add("active-link");
+          link.classList.add("active-link");
         } else {
-          document
-            .querySelector(".nav-menu a[href*=" + sectionId + "]")
-            .classList.remove("active-link");
+          link.classList.remove("active-link");
         }
       });
+
     }
     const sr = ScrollReveal({
       origin: "top",

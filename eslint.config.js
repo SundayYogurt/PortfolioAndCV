@@ -24,15 +24,19 @@ export default [
       'react-refresh': reactRefresh,
     },
     rules: {
+      // Extends recommended ESLint and React rules
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
+
+      // Custom rule overrides
       'react/jsx-no-target-blank': 'off',
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
       ],
+      'react/no-unescaped-entities': 'off', // Disable warning for unescaped entities
     },
   },
 ]
