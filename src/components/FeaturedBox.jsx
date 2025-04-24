@@ -43,12 +43,12 @@ const FeaturedBox = () => {
             </a>
           </div>
           <div className="icon">
-            <a href="https://www.facebook.com/se_npru" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/kritsana.piwgram.2024" target="_blank" rel="noopener noreferrer">
               <i className="uil uil-facebook-f"></i>
             </a>
           </div>
           <div className="icon">
-            <a href="https://github.com/se_npru" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/SundayYogurt" target="_blank" rel="noopener noreferrer">
               <i className="uil uil-github"></i>
             </a>
           </div>
